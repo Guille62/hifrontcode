@@ -1,0 +1,84 @@
+@media (min-width: 576px) { 
+    body{
+        background-color: $verde;
+        .btn{
+            max-width: 350px;
+        }
+
+        .flecha-down{
+            position: relative;
+            left: auto;
+            margin-left: auto;
+            margin-right: auto;
+            transform: scale(1);
+        }
+        // SECCIÓN 1
+        .section .s1{
+                background-position: bottom center !important;
+                background-size: cover !important;
+                height: 100vh !important;
+                position: relative;
+                
+        }
+        .s1{
+
+
+            #logo{
+                margin:4rem 2rem;
+            }
+            h1{
+                font-size: 2.5rem;
+                margin-bottom: -1.8rem;
+            }
+            h2{
+                font-size: 7rem;
+            }
+        }
+
+         // SECCIÓN 2
+        .s2{
+            .block-list{ max-width: 360px;}
+            h1{
+                font-size: 2rem;
+            }
+
+            .listado{
+                li{
+                    font-size: 0.9rem;
+                }
+            }
+
+            .check{
+                max-width: 100%;
+            }
+        }
+
+        //SECCIÓN 3
+        .s3{
+            h1{
+                text-align: right;
+                margin-top: 0;
+                font-size: 3rem;
+                line-height: 2.8rem;
+                float: right;
+            }
+        }
+
+        // SECCIÓN 4
+
+        .s4{
+            .soy-block{
+                max-width: 500px;
+                margin: 0 auto;
+                
+                p{
+                    font-size: 0.9rem;
+                    line-height: 1.3rem;
+                    margin-top: 1.5rem;
+                    text-align: justify;
+                }
+            }
+        }
+
+    }
+ }

@@ -1,0 +1,251 @@
+$blanco: #FFF;
+$morado: #CF57F2;
+$verde: #00FF9F;
+$gris: #645A53;
+$g-claro: #E5E5E5;
+
+@keyframes slidedown {
+    from {
+      margin-top: -20px;
+    }
+  
+    to {
+      margin-top:0px;
+    }
+  }
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+
+.img-fluid{max-width: 100%;}
+
+.flecha-down{
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    max-width: 67px;
+    height: 67px;
+    width: 100%;
+    display: block;
+    transform: scale(0.5);
+
+        img{
+            max-width: 100%;
+            display: block;
+            animation-duration: 1s;
+            animation-name: slidedown;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+             
+}
+
+body{
+    background:$blanco;
+    font-family: 'Roboto';
+    font-size: 16px;
+
+    .container{
+        width: 100%;
+        max-width: 1300px;
+        margin: auto;
+        padding: 0px 15px;
+    }
+
+    .btn{
+        font-size: 1.7rem;
+        text-decoration: none;
+        width: 100%;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        border: solid $morado 2px;
+        padding: 0.8rem;
+        letter-spacing: 2px;
+        color: transparent;
+        -webkit-text-stroke-width: 2px; 
+        -webkit-text-stroke-color: $morado ; 
+        transition: .3s;
+            &:hover, &:focus{
+                background-color: $morado;
+                border: solid $morado 2px;
+                color: $verde;
+                -webkit-text-stroke-color: $verde ;
+            }
+    }
+
+    // SECCIÓN 1
+
+    .s1{
+        background-image: url('../img/hifrontcode-1-min.jpg'); // REDIMIENSIONAR IMAGEN PARA MOBILE
+        background-position: center left;
+        background-size: cover;
+        background-attachment: fixed;
+
+        #logo{
+            max-width: 35%;
+            margin:3rem 2rem;
+        }
+
+        h1{
+            color: $blanco;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 0rem;
+            margin-bottom: -1rem;
+        }
+
+        h2{
+            font-size: 5rem;
+            line-height: 0.5rem;
+            color: transparent;
+            -webkit-text-stroke-width: 3px; 
+            -webkit-text-stroke-color: $verde ; 
+        }    
+    }
+
+    // SECCIÓN 2
+
+    .s2{
+        background-color: $verde;
+
+        h1{
+            font-size: 1.3rem;
+            color: $morado;
+            margin: 0.3rem 0;
+        }
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0.4rem 0;
+        }
+
+        .listado{
+            color: $gris;
+            
+            li{
+                font-size: 0.7rem;
+                padding: 0.3rem 0;
+            }
+        }
+
+        .check{
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 7%;
+            margin: 0.2rem;
+        }
+
+    }
+
+    // SECCIÓN 3
+
+    .s3{
+        background-color: $morado;
+
+        h1{
+            font-size: 3rem;
+            line-height: 2.8rem;
+            text-align: center;
+            color: transparent;
+            -webkit-text-stroke-width: 2px; 
+            -webkit-text-stroke-color: $verde ; 
+        }
+
+        .redes-block{
+            display: grid;
+            grid-row: 4;
+            grid-column: 3;
+            grid-row-gap: 1.8rem;
+            grid-column-gap: 2rem;
+                div{
+                    transition: .3s;
+                    &:hover, &:focus{
+                        opacity: 0.7;
+                    }
+                }
+
+            div:nth-child(1){
+                display: flex;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            div:nth-child(2){
+                display: flex;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            div:nth-child(3){
+                display: flex;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }    
+            div:nth-child(4){
+                display: flex;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }    
+            div:nth-child(5){
+                display: flex;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }            
+        }
+    }
+
+    // SECCIÓN 4
+
+    .s4{
+        background-color: $g-claro;
+
+        p{
+            line-height: 1.3rem;
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: $gris;
+            text-align: center;
+        }
+
+        .redes-personal{
+            list-style: none;
+            padding: 1rem;
+            margin:0;
+            width: 200px;
+
+            li  {  
+                display: inline-block;
+                text-align: center;
+                a{
+                    transition: 0.3s;
+                    &:hover, &:focus{
+                        opacity: 0.7;
+                    }
+                }
+
+                img{
+                    max-width: 70%;
+                }
+            }    
+        }
+
+    }
+
+}
+
+
+@import 'sm', 'md', 'lg';

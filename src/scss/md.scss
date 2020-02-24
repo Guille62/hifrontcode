@@ -1,0 +1,58 @@
+@media (min-width: 768px){
+
+    body{
+
+        .btn{
+            margin-top: 2rem;
+        }
+
+        // SECCIÓN 1
+        .s1{
+
+            padding-top: 1rem;
+
+            .container{ 
+                height: 100vh !important;
+            }    
+            #logo{
+                max-width: 100%;
+            }
+            h1{
+                font-size: 2.8rem;
+                margin-bottom: -1.5rem;
+            }
+            h2{
+                font-size: 8rem;
+            }
+        }
+    
+        // SECCIÓN 2
+
+        .s2{
+
+            h1{
+                font-size: 2.6rem;
+                margin-top: 0;
+                line-height: 2.7rem;
+            }
+            .block-list{ max-width: 360px;margin-left: 1rem;}
+            .listado{
+               margin-top: 1rem;
+                li{
+                    font-size: 0.9rem;
+                }
+            }    
+        }
+
+
+        //SECCIÓN 3
+        .s3{
+            h1{
+                font-size: 4rem;
+                line-height: 3.8rem;
+            }
+        }
+
+
+    }
+ }
